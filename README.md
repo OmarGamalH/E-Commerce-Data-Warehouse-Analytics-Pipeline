@@ -363,26 +363,6 @@ Generate a Fernet key:
 python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"
 ```
 
-> [!IMPORTANT]
-> **Never commit `.env` or hard-code credentials.** Add `.env` to `.gitignore` before your first commit. Both `dags/Utilities.py` and `dags/e_commerce_dbt/profiles.yml` should read from environment variables — `os.environ["SNOWFLAKE_PASSWORD"]` in Python, and `{{ env_var('SNOWFLAKE_PASSWORD') }}` in the dbt profile. If credentials have already been committed, rotate them and scrub the git history before publishing.
-
-Example `profiles.yml` using environment variables:
-
-```yaml
-e_commerce_dbt:
-  target: dev
-  outputs:
-    dev:
-      type: snowflake
-      account:   "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
-      user:      "{{ env_var('SNOWFLAKE_USER') }}"
-      password:  "{{ env_var('SNOWFLAKE_PASSWORD') }}"
-      role:      "{{ env_var('SNOWFLAKE_ROLE') }}"
-      warehouse: "{{ env_var('SNOWFLAKE_WAREHOUSE') }}"
-      database:  "{{ env_var('SNOWFLAKE_DATABASE') }}"
-      schema:    "{{ env_var('SNOWFLAKE_SCHEMA') }}"
-      threads: 4
-```
 
 ### Step 4 — Add the source data
 
