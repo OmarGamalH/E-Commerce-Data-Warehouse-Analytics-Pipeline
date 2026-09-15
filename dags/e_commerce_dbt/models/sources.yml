@@ -1,0 +1,34 @@
+version: 2
+
+sources: 
+  - name: e_commerece
+    schema: Raw
+    tables:
+      - name: raw_category_name
+        identifier: category_name
+
+      - name: raw_customers
+        identifier: customers
+      
+      - name: raw_geolocation
+        identifier: geolocation
+
+      - name: raw_order_items
+        identifier: order_items
+
+      - name: raw_order_payments
+        identifier: order_payments
+
+      - name: raw_order_reviews
+        identifier: order_reviews
+
+      - name: raw_orders
+        identifier: orders
+      
+      - name: raw_products
+        identifier: products
+      
+      - name: raw_sellers
+        identifier: sellers
+
+  

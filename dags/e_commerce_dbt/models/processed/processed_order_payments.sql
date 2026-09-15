@@ -1,0 +1,12 @@
+WITH PAYMENTS_INFO AS (
+    SELECT 
+        ORDER_ID,
+        PAYMENT_SEQUENTIAL,
+        INITCAP(REPLACE(PAYMENT_TYPE , '_' , ' ')) AS PAYMENT_TYPE ,
+        PAYMENT_INSTALLMENTS,
+        PAYMENT_VALUE,
+        CURRENT_TIMESTAMP() AS UPDATED_AT
+
+    FROM {{source('e_commerece' , 'raw_order_payments')}}
+)
+SELECT * FROM PAYMENTS_INFO

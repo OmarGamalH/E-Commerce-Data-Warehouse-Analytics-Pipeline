@@ -1,0 +1,11 @@
+
+
+SELECT 
+    CUSTOMER_ID ,
+    INITCAP(CUSTOMER_CITY) AS CUSTOMER_CITY,
+    CUSTOMER_ZIP_CODE_PREFIX,
+    CUSTOMER_STATE,
+    CURRENT_TIMESTAMP AS UPDATED_AT
+
+FROM {{source('e_commerece' , 'raw_customers')}}
+

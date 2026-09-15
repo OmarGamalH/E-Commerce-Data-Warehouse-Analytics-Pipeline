@@ -1,0 +1,191 @@
+[0m00:37:58.225150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d35b29facf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d35b139bed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d35b139bb10>]}
+
+
+============================== 00:37:58.234710 | cbe55458-a984-4b4a-b418-e379592f04bf ==============================
+[0m00:37:58.234710 [info ] [MainThread]: Running with dbt=1.12.3
+[0m00:37:58.237193 [debug] [MainThread]: running dbt with arguments {'write_json': 'True', 'profiles_dir': '/home/omar/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'static_parser': 'True', 'target_path': 'None', 'no_print': 'None', 'quiet': 'False', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'use_colors': 'True', 'empty': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'printer_width': '80', 'invocation_command': 'dbt init e_commerce_dbt', 'maximum_seed_size_mib': '1', 'log_format': 'default', 'debug': 'False', 'cache_selected_only': 'False', 'hints_enabled': 'True', 'use_experimental_parser': 'False', 'version_check': 'True'}
+[0m00:37:58.281585 [info ] [MainThread]: Creating dbt configuration folder at /home/omar/.dbt
+[0m00:37:58.287564 [debug] [MainThread]: Starter project path: /home/omar/.pyenv/versions/3.13.0/lib/python3.13/site-packages/dbt/include/starter_project
+[0m00:37:58.306728 [info ] [MainThread]: Setting up your profile.
+[0m00:38:04.284601 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:38:04.286549 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:38:04.288412 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:40:52.692455 [info ] [MainThread]: Profile e_commerce_dbt written to /home/omar/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m00:40:52.702312 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m00:40:52.706142 [info ] [MainThread]: dbt version: 1.12.3
+[0m00:40:52.710104 [info ] [MainThread]: python version: 3.13.0
+[0m00:40:52.713031 [info ] [MainThread]: python path: /home/omar/.pyenv/versions/3.13.0/bin/python3.13
+[0m00:40:52.715771 [info ] [MainThread]: os info: Linux-6.17.0-41-generic-x86_64-with-glibc2.42
+[0m00:40:53.049141 [info ] [MainThread]: Using profiles dir at /home/omar/.dbt
+[0m00:40:53.051214 [info ] [MainThread]: Using profiles.yml file at /home/omar/.dbt/profiles.yml
+[0m00:40:53.053221 [info ] [MainThread]: Using dbt_project.yml file at /home/omar/Desktop/E-Commerce-Data-Warehouse-Analytics-Pipeline/e_commerce_dbt/dbt_project.yml
+[0m00:40:53.059557 [info ] [MainThread]: adapter type: snowflake
+[0m00:40:53.061674 [info ] [MainThread]: adapter version: 1.12.0
+[0m00:40:53.771224 [info ] [MainThread]: Configuration:
+[0m00:40:53.773607 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:40:53.776155 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:40:53.778196 [info ] [MainThread]: Required dependencies:
+[0m00:40:53.781292 [debug] [MainThread]: Executing "git --help"
+[0m00:40:53.792218 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:40:53.795615 [debug] [MainThread]: STDERR: "b''"
+[0m00:40:53.800139 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:40:53.804912 [info ] [MainThread]: Connection:
+[0m00:40:53.810207 [info ] [MainThread]:   account: jnnzjie-vf83076
+[0m00:40:53.817109 [info ] [MainThread]:   user: OmarG
+[0m00:40:53.819906 [info ] [MainThread]:   database: E_COMMERCE_DATABASE
+[0m00:40:53.822969 [info ] [MainThread]:   warehouse: compute_Wh
+[0m00:40:53.825710 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:40:53.829058 [info ] [MainThread]:   schema: RAW
+[0m00:40:53.832392 [info ] [MainThread]:   authenticator: None
+[0m00:40:53.835328 [info ] [MainThread]:   oauth_client_id: None
+[0m00:40:53.838858 [info ] [MainThread]:   query_tag: None
+[0m00:40:53.842934 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:40:53.846888 [info ] [MainThread]:   host: None
+[0m00:40:53.851521 [info ] [MainThread]:   port: None
+[0m00:40:53.857009 [info ] [MainThread]:   proxy_host: None
+[0m00:40:53.862663 [info ] [MainThread]:   proxy_port: None
+[0m00:40:53.867524 [info ] [MainThread]:   protocol: None
+[0m00:40:53.869327 [info ] [MainThread]:   connect_retries: 1
+[0m00:40:53.871560 [info ] [MainThread]:   connect_timeout: None
+[0m00:40:53.873522 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:40:53.875924 [info ] [MainThread]:   retry_all: False
+[0m00:40:53.877675 [info ] [MainThread]:   insecure_mode: False
+[0m00:40:53.879594 [info ] [MainThread]:   reuse_connections: True
+[0m00:40:53.880904 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:40:53.882557 [info ] [MainThread]:   workload_identity_provider: None
+[0m00:40:53.884719 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m00:40:53.886756 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m00:40:53.888951 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m00:40:54.297262 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:40:54.307839 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:40:54.309276 [debug] [MainThread]: On debug: select 1 as id
+[0m00:40:54.310532 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:41:14.171813 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m00:41:14.173630 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m00:41:14.175358 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m00:41:14.179352 [info ] [MainThread]: [31m1 check failed:[0m
+[0m00:41:14.186103 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  390100 (28000): Failed to connect to DB: jnnzjie-vf83076.snowflakecomputing.com:443. Incorrect username or password was specified. [bb3aed73-153f-43c3-9d11-42c054896303]
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m00:41:14.188662 [info ] [MainThread]: Your new dbt project "e_commerce_dbt" was created!
+Initialized new project in /home/omar/Desktop/E-Commerce-Data-Warehouse-Analytics-Pipeline/e_commerce_dbt/e_commerce_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:41:14.190917 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m00:41:14.198992 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 196.37285, "process_in_blocks": "229728", "process_kernel_time": 1.34693, "process_mem_max_rss": "236920", "process_out_blocks": "5032", "process_user_time": 13.219875}
+[0m00:41:14.214066 [debug] [MainThread]: Command `dbt init` succeeded at 00:41:14.210328 after 196.39 seconds
+[0m00:41:14.219102 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:41:14.220964 [debug] [MainThread]: On debug: No close available on handle
+[0m00:41:14.222897 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d358a5eec40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d35b1410950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d358a3cbce0>]}
+[0m00:41:14.225027 [debug] [MainThread]: Flushing usage events
+[0m00:41:15.088198 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:41:49.378146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x709717912cf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7097162bbed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7097162bbb10>]}
+
+
+============================== 00:41:49.388889 | e3c2a7ab-c1f3-4f6c-b85e-37170c67f4f4 ==============================
+[0m00:41:49.388889 [info ] [MainThread]: Running with dbt=1.12.3
+[0m00:41:49.391342 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'invocation_command': 'dbt init e_commerce_dbt', 'hints_enabled': 'True', 'version_check': 'True', 'quiet': 'False', 'use_colors': 'True', 'printer_width': '80', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'static_parser': 'True', 'partial_parse': 'True', 'introspect': 'True', 'no_print': 'None', 'write_json': 'True', 'log_path': 'logs', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'target_path': 'None', 'log_cache_events': 'False', 'profiles_dir': '/home/omar/.dbt', 'warn_error': 'None', 'empty': 'None'}
+[0m00:41:49.429731 [debug] [MainThread]: Starter project path: /home/omar/.pyenv/versions/3.13.0/lib/python3.13/site-packages/dbt/include/starter_project
+[0m00:41:49.440688 [info ] [MainThread]: Setting up your profile.
+[0m00:41:59.190581 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m00:41:59.193209 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m00:41:59.195830 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m00:42:44.584991 [info ] [MainThread]: Profile e_commerce_dbt written to /home/omar/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m00:42:44.590699 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m00:42:44.593308 [info ] [MainThread]: dbt version: 1.12.3
+[0m00:42:44.595313 [info ] [MainThread]: python version: 3.13.0
+[0m00:42:44.597562 [info ] [MainThread]: python path: /home/omar/.pyenv/versions/3.13.0/bin/python3.13
+[0m00:42:44.599470 [info ] [MainThread]: os info: Linux-6.17.0-41-generic-x86_64-with-glibc2.42
+[0m00:42:44.883543 [info ] [MainThread]: Using profiles dir at /home/omar/.dbt
+[0m00:42:44.885174 [info ] [MainThread]: Using profiles.yml file at /home/omar/.dbt/profiles.yml
+[0m00:42:44.886689 [info ] [MainThread]: Using dbt_project.yml file at /home/omar/Desktop/E-Commerce-Data-Warehouse-Analytics-Pipeline/e_commerce_dbt/dbt_project.yml
+[0m00:42:44.889055 [info ] [MainThread]: adapter type: snowflake
+[0m00:42:44.890762 [info ] [MainThread]: adapter version: 1.12.0
+[0m00:42:45.488323 [info ] [MainThread]: Configuration:
+[0m00:42:45.490328 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m00:42:45.492298 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m00:42:45.494316 [info ] [MainThread]: Required dependencies:
+[0m00:42:45.496541 [debug] [MainThread]: Executing "git --help"
+[0m00:42:45.505741 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m00:42:45.508220 [debug] [MainThread]: STDERR: "b''"
+[0m00:42:45.510670 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m00:42:45.512999 [info ] [MainThread]: Connection:
+[0m00:42:45.515392 [info ] [MainThread]:   account: jnnzjie-vf83076
+[0m00:42:45.517845 [info ] [MainThread]:   user: OmarG
+[0m00:42:45.520034 [info ] [MainThread]:   database: E_COMMERCE_DATABASE
+[0m00:42:45.522214 [info ] [MainThread]:   warehouse: compute_wh
+[0m00:42:45.524556 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m00:42:45.526811 [info ] [MainThread]:   schema: RAW
+[0m00:42:45.528957 [info ] [MainThread]:   authenticator: None
+[0m00:42:45.531048 [info ] [MainThread]:   oauth_client_id: None
+[0m00:42:45.533089 [info ] [MainThread]:   query_tag: None
+[0m00:42:45.535171 [info ] [MainThread]:   client_session_keep_alive: False
+[0m00:42:45.537132 [info ] [MainThread]:   host: None
+[0m00:42:45.538985 [info ] [MainThread]:   port: None
+[0m00:42:45.540973 [info ] [MainThread]:   proxy_host: None
+[0m00:42:45.542921 [info ] [MainThread]:   proxy_port: None
+[0m00:42:45.544852 [info ] [MainThread]:   protocol: None
+[0m00:42:45.547158 [info ] [MainThread]:   connect_retries: 1
+[0m00:42:45.549261 [info ] [MainThread]:   connect_timeout: None
+[0m00:42:45.551863 [info ] [MainThread]:   retry_on_database_errors: False
+[0m00:42:45.553879 [info ] [MainThread]:   retry_all: False
+[0m00:42:45.556053 [info ] [MainThread]:   insecure_mode: False
+[0m00:42:45.557793 [info ] [MainThread]:   reuse_connections: True
+[0m00:42:45.559452 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m00:42:45.561279 [info ] [MainThread]:   workload_identity_provider: None
+[0m00:42:45.563359 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m00:42:45.564721 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m00:42:45.566890 [info ] [MainThread]: Registered adapter: snowflake=1.12.0
+[0m00:42:46.032869 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m00:42:46.040909 [debug] [MainThread]: Using snowflake connection "debug"
+[0m00:42:46.042261 [debug] [MainThread]: On debug: select 1 as id
+[0m00:42:46.043669 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:43:02.689646 [debug] [MainThread]: SQL status: SUCCESS 1 in 16.646 seconds
+[0m00:43:02.693478 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m00:43:02.695151 [info ] [MainThread]: [32mAll checks passed![0m
+[0m00:43:02.696746 [info ] [MainThread]: Your new dbt project "e_commerce_dbt" was created!
+Initialized new project in /home/omar/Desktop/E-Commerce-Data-Warehouse-Analytics-Pipeline/e_commerce_dbt/e_commerce_dbt
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m00:43:02.700896 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 73.738266, "process_in_blocks": "32", "process_kernel_time": 0.904061, "process_mem_max_rss": "235432", "process_out_blocks": "120", "process_user_time": 9.674549}
+[0m00:43:02.703650 [debug] [MainThread]: Command `dbt init` succeeded at 00:43:02.703026 after 73.74 seconds
+[0m00:43:02.705554 [debug] [MainThread]: Connection 'debug' was left open.
+[0m00:43:02.707311 [debug] [MainThread]: On debug: Close
+[0m00:43:02.996275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7096ef202c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7096ef0a28d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7096ef1dfce0>]}
+[0m00:43:02.997964 [debug] [MainThread]: Flushing usage events
+[0m00:43:04.123926 [debug] [MainThread]: An error was encountered while trying to flush usage events
